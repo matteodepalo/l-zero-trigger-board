@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/53/trunk/Scope%20files
+END
+821 mV input 600 mV threshold.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/44/trunk/Scope%20files/821%20mV%20input%20600%20mV%20threshold.bmp
+END
+sum output 3 channels (2).csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/53/trunk/Scope%20files/sum%20output%203%20channels%20(2).csv
+END
+sum output ch 4 0 1 all different.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%204%200%201%20all%20different.bmp
+END
+input output delay std dev.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/46/trunk/Scope%20files/input%20output%20delay%20std%20dev.bmp
+END
+channel 0 vs channel 2 input delay.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/46/trunk/Scope%20files/channel%200%20vs%20channel%202%20input%20delay.bmp
+END
+sum rise and fall times.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/44/trunk/Scope%20files/sum%20rise%20and%20fall%20times.bmp
+END
+sum output 3 channels (3) v2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/53/trunk/Scope%20files/sum%20output%203%20channels%20(3)%20v2.csv
+END
+sum output ch 0 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%200%20input%20500%20mV%20DT%20100%20mV.csv
+END
+output width jitter.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/46/trunk/Scope%20files/output%20width%20jitter.bmp
+END
+sum output ch 4 and 5 different (2-1-1).bmp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%204%20and%205%20different%20(2-1-1).bmp
+END
+100 mV input ch5.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/44/trunk/Scope%20files/100%20mV%20input%20ch5.bmp
+END
+sum output 4 channels (4) 500 input 100 DT.csv
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%204%20channels%20(4)%20500%20input%20100%20DT.csv
+END
+sum output ch 4 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%204%20input%20500%20mV%20DT%20100%20mV.csv
+END
+231 mV input 0.4 Gs 3.1 ns.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/44/trunk/Scope%20files/231%20mV%20input%200.4%20Gs%203.1%20ns.bmp
+END
+output width 200 mV threshold 500 mV signal.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/12/trunk/Scope%20files/output%20width%20200%20mV%20threshold%20500%20mV%20signal.bmp
+END
+adder ouput 5 channels.csv
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/53/trunk/Scope%20files/adder%20ouput%205%20channels.csv
+END
+input after haper 500 mV.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/11/trunk/Scope%20files/input%20after%20haper%20500%20mV.jpg
+END
+sumPed2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/46/trunk/Scope%20files/sumPed2.csv
+END
+sondaPedMore.csv
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/44/trunk/Scope%20files/sondaPedMore.csv
+END
+output threshold 0 input 100 ch5.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/44/trunk/Scope%20files/output%20threshold%200%20input%20100%20ch5.bmp
+END
+sum output 3 channels (1-1-1).csv
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%203%20channels%20(1-1-1).csv
+END
+input output delay mean.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/46/trunk/Scope%20files/input%20output%20delay%20mean.bmp
+END
+sum output 3 channels (1).csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/53/trunk/Scope%20files/sum%20output%203%20channels%20(1).csv
+END
+sum output ch 1 input 500 mV DT 100 mV.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%201%20input%20500%20mV%20DT%20100%20mV.bmp
+END
+sum output 3 channels (3).csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%203%20channels%20(3).csv
+END
+ScopeNoise.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/44/trunk/Scope%20files/ScopeNoise.bmp
+END
+sumPed.csv
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/46/trunk/Scope%20files/sumPed.csv
+END
+sondaPed.csv
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/44/trunk/Scope%20files/sondaPed.csv
+END
+pedestal change for value 0 with 3 ns width.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/44/trunk/Scope%20files/pedestal%20change%20for%20value%200%20with%203%20ns%20width.bmp
+END
+noise.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/46/trunk/Scope%20files/noise.bmp
+END
+comparator output channel 0.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/46/trunk/Scope%20files/comparator%20output%20channel%200.csv
+END
+time jitter 2 channels.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/53/trunk/Scope%20files/time%20jitter%202%20channels.bmp
+END
+comparator output channel 1.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/46/trunk/Scope%20files/comparator%20output%20channel%201.csv
+END
+comparator output channel 4.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/46/trunk/Scope%20files/comparator%20output%20channel%204.csv
+END
+sum output ch 1 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%201%20input%20500%20mV%20DT%20100%20mV.csv
+END
+sum output ch 4 and 5 different.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%204%20and%205%20different.bmp
+END
+sum output ch 4 and 5 different (2-2).bmp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%204%20and%205%20different%20(2-2).bmp
+END
+sum output ch 5 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%205%20input%20500%20mV%20DT%20100%20mV.csv
+END
+sum output ch 7 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/46/trunk/Scope%20files/sum%20output%20ch%207%20input%20500%20mV%20DT%20100%20mV.csv
+END
+adder ouput 4 channels.csv
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/53/trunk/Scope%20files/adder%20ouput%204%20channels.csv
+END
+time jitter 1 channel.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/53/trunk/Scope%20files/time%20jitter%201%20channel.bmp
+END
+SUMnoGEN.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/46/trunk/Scope%20files/SUMnoGEN.bmp
+END
+output signal 500mV threshold 300 mV.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/11/trunk/Scope%20files/output%20signal%20500mV%20threshold%20300%20mV.jpg
+END
+purple sum single - green sum differential.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/44/trunk/Scope%20files/purple%20sum%20single%20-%20green%20sum%20differential.bmp
+END
+ch3 problem.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/44/trunk/Scope%20files/ch3%20problem.bmp
+END

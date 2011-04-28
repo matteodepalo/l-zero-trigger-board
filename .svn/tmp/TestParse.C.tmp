@@ -1,0 +1,8 @@
+#include "TBDataParser.h"
+
+void TestParse() {
+	gROOT->LoadMacro("TBDataParser.C");
+	TBDataParser *parser = new TBDataParser();
+	parser->Parse("Data.xml");
+	TBrowser *browser = new TBrowser();
+}

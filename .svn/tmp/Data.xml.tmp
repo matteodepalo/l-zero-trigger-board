@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<data name="TriggerBoardData">
+	<task name="Linearity">
+		<task name="Channel 5">
+			<task name="1Gs">
+				<dataset name="InputShaper">
+					<vector name="V generator">
+						<values>100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V input shaper">
+						<values>100,205.5,320,430,537,647.5,703.5,824,874,899,920.6,939.7,935,933,942,951,942.2,949.3,954.3,950.5</values>
+						<vector name="errors">
+							<values>1,0.3,1,1,0.3,0.3,0.3,1,1,1,0.3,0.3,1,1,1,1,0.3,0.3,0.3,0.5</values>
+						</vector>
+					</vector>
+					<vector name="Input Width">
+						<values>2.13,1.86,1.82,1.81,1.79,1.77,1.79,1.85,1.95,2.05,2.15,2.23,2.31,2.41,2.46,2.52,2.60,2.66,2.72,2.78</values>
+						<vector name="errors" method="all">
+							<values>0.1</values>
+						</vector>
+					</vector>
+				</dataset>
+				<task name="Response">
+					<dataset name="V input">
+						<vector name="V input shaper">
+							<values>102,209,321,437,546,649,753,832</values>
+							<vector name="errors" method="all">
+								<values>1</values>
+							</vector>
+						</vector>
+						<vector name="V nominal input">
+							<values>100,200,300,400,500,600,700,800</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="100mV">
+						<vector name="DT">
+							<values>0,50,80,90,95,100,110,150</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>770,764.0,789.8,665,283,26,14.5,14.0</values>
+							<vector name="errors">
+								<values>1,0.5,0.5,2,10,1,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="200mV">
+						<vector name="DT">
+							<values>100,120,150,180,190,195,200,205,220,250</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>770.4,765.3,784.8,755.2,599,449,104,21,12.8,14.2</values>
+							<vector name="errors">
+								<values>0.5,0.5,0.3,0.3,1,10,10,2,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="300mV">
+						<vector name="DT">
+							<values>200,220,250,280,290,295,300,305,310,320,350</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>764.0,766.0,787,739.8,662,591,450,225,31.1,14.8,18.1</values>
+							<vector name="errors">
+								<values>0.3,0.3,1,0.5,2,2,10,10,0.5,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="400mV">
+						<vector name="DT">
+							<values>300,320,350,380,390,395,400,405,410,415,420,450,500</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>778.2,784.2,796,745,684,673,586,520,427,277.4,50,16.7,15.5</values>
+							<vector name="errors">
+								<values>0.5,0.3,1,1,1,3,3,3,10,10,2,0.3,0.5</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="500mV">
+						<vector name="DT">
+							<values>400,420,450,480,490,495,500,505,510,515,520,525,530,550,600</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>779.9,801,780.9,710,664,627,580,527,475,373,254,65.8,21.5,18.0,18.1</values>
+							<vector name="errors">
+								<values>0.5,1,0.5,1,2,5,3,5,7,10,10,5,0.3,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="600mV">
+						<vector name="DT">
+							<values>500,520,550,580,590,595,600,605,610,615,620,625,650,670,700</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>786.2,770.8,759.4,676,618,591,547,513,453,330,260,97,26,21.1,19.7</values>
+							<vector name="errors">
+								<values>0.3,0.3,0.3,1,2,5,3,5,10,15,10,5,1,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="700mV">
+						<vector name="DT">
+							<values>550,600,620,650,680,690,695,700,705,710,715,720,730,750,800</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>769.5,775,745,734,618,550,524,478,424,328,234,78,23.4,23.3,21.9</values>
+							<vector name="errors">
+								<values>0.5,2,1,2,1,3,2,5,3,20,10,3,0.3,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+					<dataset name="800mV">
+						<vector name="DT">
+							<values>600,650,700,720,750,760,770,780,790,795,800,810,815,820,850,900</values>
+							<vector name="errors" method="all">
+								<values>0</values>
+							</vector>
+						</vector>
+						<vector name="V output">
+							<values>751.1,773.2,780.0,742.3,670.0,637,580,512,423,348,252,104,23.8,29.8,23.4,23.2</values>
+							<vector name="errors">
+								<values>0.3,0.5,0.3,0.3,0.3,2,2,5,10,10,10,3,0.5,0.3,0.3,0.3</values>
+							</vector>
+						</vector>
+					</dataset>
+				</task>
+				<task name="0.3Gs">
+					<task name="Response">
+						<dataset name="V input">
+							<vector name="V input shaper">
+								<values>224.8,446,659.2</values>
+								<vector name="errors">
+									<values>0.5,1,0.3</values>
+								</vector>
+							</vector>
+							<vector name="V nominal input">
+								<values>200,400,600</values>
+								<vector name="errors" method="all">
+									<values>0</values>
+								</vector>
+							</vector>
+						</dataset>
+						<dataset name="200mV">
+							<vector name="V input shaper">
+								<values>224.8</values>
+								<vector name="errors">
+									<values>0.5</values>
+								</vector>
+							</vector>
+							<vector name="DT">
+								<values>100,120,150,180,200,210,215,220,225,250</values>
+								<vector name="errors" method="all">
+									<values>0</values>
+								</vector>
+							</vector>
+							<vector name="V output">
+								<values>799.8,810.0,776,765,803,771,102,105,17</values>
+								<vector name="errors">
+									<values>0.3,0.5,1,1,1,2,3,5,1,0.5</values>
+								</vector>
+							</vector>
+						</dataset>
+						<dataset name="400mV">
+							<vector name="V input shaper">
+								<values>446</values>
+								<vector name="errors">
+									<values>1</values>
+								</vector>
+							</vector>
+							<vector name="DT">
+								<values>300,320,350,410,420,430,435,440,445,450,500</values>
+								<vector name="errors" method="all">
+									<values>0</values>
+								</vector>
+							</vector>
+							<vector name="V output">
+								<values>784.5,789,789,782,794,691,560,128,17.3,19.7</values>
+								<vector name="errors">
+									<values>0.3,1,1,1,5,5,3,5,0.3,0.3,0.3</values>
+								</vector>
+							</vector>
+						</dataset>
+						<dataset name="600mV">
+							<vector name="V input shaper">
+								<values>659.2</values>
+								<vector name="errors">
+									<values>0.3</values>
+								</vector>
+							</vector>
+							<vector name="DT">
+								<values>550,580,590,600,610,630,640,645,650,655,660,680</values>
+								<vector name="errors" method="all">
+									<values>0</values>
+								</vector>
+							</vector>
+							<vector name="V output">
+								<values>742,761,734.7,753.8,740.6,773,683.4,615,247,17.8,20.8,19.5</values>
+								<vector name="errors">
+									<values>1,1,0.5,0.5,0.3,1,0.5,2,5,0.3,0.3,0.3</values>
+								</vector>
+							</vector>
+						</dataset>
+					</task>
+				</task>
+			</task>
+		</task>
+		<task name="Channel 6">
+			<task name="Response">
+				<dataset name="V input">
+					<vector name="V input shaper">
+						<values>106.6,203.7,305,415.5,462.8,598.9,681.8,771.6,834.6,843.1</values>
+						<vector name="errors" method="all">
+							<values>0.3</values>
+						</vector>
+					</vector>
+					<vector name="V nominal input">
+						<values>100,200,300,400,500,600,700,800,900,1000</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="100mV">
+					<vector name="DT">
+						<values>0,50,80,90,95,100,105,150</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>755.9,766.4,786.2,724.3,469.7,33.9,19.5,18.6</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,2,0.3,0.3,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="200mV">
+					<vector name="DT">
+						<values>100,150,180,190,195,200,205,250</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>776.1,788.8,773,691.1,546.3,178.5,25.4,19.5</values>
+						<vector name="errors">
+							<values>0.3,0.3,1,2,8,6,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="300mV">
+					<vector name="DT">
+						<values>200,220,250,280,290,295,300,305,310,350</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>780.2,782.1,775.3,745.3,689.4,619.4,422.4,31,26.5,20.4</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,0.3,2,8,8,0.3,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="400mV">
+					<vector name="DT">
+						<values>300,320,350,380,390,395,400,405,410,415,420,450</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>788.7,780.3,779.6,751.6,734.5,654.3,641.4,526.5,340,116.1,26.4,19</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,0.3,2,4,8,10,10,4,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="500mV">
+					<vector name="DT">
+						<values>400,420,450,480,490,495,500,505,510,515,520,550</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>778.4,781.9,776.5,729.4,660.2,605.9,521,333.2,120.5,48.9,23.4,21.2</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,1,3,4,6,10,4,2,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="600mV">
+					<vector name="DT">
+						<values>500,520,550,580,590,595,600,605,610,615,620,650</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>775.3,777.8,771.1,730.2,686.6,642.8,590.8,472.8,251.3,72.8,31,17.8</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,0.3,2,2,3,10,8,3,1,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="700mV">
+					<vector name="DT">
+						<values>550,600,620,650,680,690,695,700,705,710,715,720</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>788,790.1,791.3,752.9,609.3,437.4,252.2,111,63.4,27.9,21,20.9</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,0.3,4,10,10,4,8,3,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="800mV">
+					<vector name="DT">
+						<values>600,650,700,720,750,760,770,780,785,790,800,810</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V output">
+						<values>786.1,785.7,781.9,775.6,708.6,665.8,574.5,439.8,266.6,138.5,23,21.1</values>
+						<vector name="errors">
+							<values>0.3,0.3,0.3,0.3,1,2,4,10,10,8,0.3,0.3</values>
+						</vector>
+					</vector>
+				</dataset>
+			</task>
+		</task>
+	</task>
+	<task name="Width">
+		<task name="Channel 5">
+			<task name="IOwidth">
+				<dataset name="Fixed input">
+					<vector name="V nominal input">
+						<values>800</values>
+						<vector name="errors">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V input shaper">
+						<values>821.5</values>
+						<vector name="errors">
+							<values>0.3</values>
+						</vector>
+					</vector>
+					<vector name="Input width after the shaper above the threshold">
+						<values>2.86,2.34,2.17,1.89,1.57,1.27,0.943,0.754,0.483,0.25</values>
+						<vector name="errors">
+							<values>0.01,0.01,0.01,0.01,0.01,0.01,0.005,0.005,0.005,0.005</values>
+						</vector>
+					</vector>
+					<vector name="Output FMHW">
+						<values>2.85,2.45,2.45,1.77,1.48,1.16,0.842,0.672,0.45,0</values>
+						<vector name="errors">
+							<values>0.01,0.01,0.01,0.01,0.01,0.01,0.005,0.005,0.01,0</values>
+						</vector>
+					</vector>
+				</dataset>
+				<dataset name="Fixed DT">
+				</dataset>
+			</task>
+		</task>
+		<task name="Channel 6">
+			<task name="IOwidth">
+				<dataset name="Fixed DT">
+					<vector name="DT">
+						<values>197</values>
+						<vector name="errors">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V nominal input">
+						<values>500,700,900,1100,1300,1500,1700,1900</values>
+						<vector name="errors" method="all">
+							<values>0</values>
+						</vector>
+					</vector>
+					<vector name="V input shaper">
+						<values>231.2,319.6,413.7,449.2,479.6,476.2,488.1,489.4</values>
+						<vector name="errors">
+							<values>0.3,1,0.5,0.3,0.5,0.5,0.5,0.5</values>
+						</vector>
+					</vector>
+					<vector name="Input width after the shaper above the threshold">
+						<values>0.995,1.6,1.97,2.15,2.28,2.37,2.47,2.6,-0.1</values>
+						<vector name="errors">
+							<values>0.001,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0</values>
+						</vector>
+					</vector>
+					<vector name="Output FMHW">
+						<values>0.834,1.56,1.9,2.08,2.2,2.31,2.42,2.57,0</values>
+						<vector name="errors">
+							<values>0.001,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0</values>
+						</vector>
+					</vector>
+				</dataset>
+			</task>
+		</task>
+	</task>
+</data>

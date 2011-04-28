@@ -1,0 +1,112 @@
+#include "TBDataParser.h"
+#include <TSAXParser.h>
+
+ClassImp(TBDataParser)
+
+TBDataParser::TBDataParser() {
+	_foldersStack = new TList();
+	_foldersStack->AddLast(gROOT->GetRootFolder());
+}
+
+void TBDataParser::Parse(const char *file) 
+{
+<<<<<<< .mine
+	_currentFolder = gROOT->GetRootFolder()->AddFolder("data","data");
+	_parentFolders = new TList();
+	TSAXParser *saxParser = new TSAXParser();
+	saxParser->ConnectToHandler("TBDataParser", this);
+	saxParser->ParseFile(file);
+=======
+	TSAXParser *parser = new TSAXParser();
+	parser->ConnectToHandler("TBDataParser", this);
+	parser->ParseFile(file);
+>>>>>>> .r32
+}
+
+void TBDataParser::OnStartDocument() 
+{ 
+
+}
+
+void TBDataParser::OnEndDocument()
+{
+
+}
+
+void TBDataParser::OnStartElement(const char *element, const TList *attributes)
+{
+<<<<<<< .mine
+
+=======
+	if(!strcmp(element, "values"))
+		return;
+		
+>>>>>>> .r32
+	TXMLAttr *attr;
+	TIter next(attributes);
+
+	char *name = "";
+
+	while ((attr = (TXMLAttr*) next())) {
+		char *attrName = attr->GetName();
+		char *attrValue = attr->GetValue();
+
+		if(!strcmp(attrName, "name") && strcmp(element,"data")) {
+			name = attrValue;	
+		}
+	}
+<<<<<<< .mine
+	if(name)
+	{
+		cout << _parentFolders << " " << _currentFolder << " " << _parentFolders->GetEntries() << endl;
+		_currentFolder = _currentFolder->AddFolder(name,name,_parentFolders);
+	//	_parentFolders->Add(lolfolder);
+	}
+
+	if(!strcmp(element, "dataset")) {
+
+	}
+=======
+	
+	TFolder *currentFolder = _foldersStack->Last();
+	_foldersStack->AddLast(currentFolder->AddFolder(name, name));
+>>>>>>> .r32
+}
+
+void TBDataParser::OnEndElement(const char *name)
+{
+	if(!strcmp(name, "values"))
+		return;
+		
+	_foldersStack->RemoveLast();
+}
+
+void TBDataParser::OnCharacters(const char *characters)
+{
+
+}
+
+void TBDataParser::OnComment(const char *text)
+{
+
+}
+
+void TBDataParser::OnWarning(const char *text)
+{
+	cout << "Warning: " << text << endl;
+}
+
+void TBDataParser::OnError(const char *text)
+{
+	cout << "Error: " << text << endl;
+}
+
+void TBDataParser::OnFatalError(const char *text)
+{
+	cout << "Fatal error: " << text << endl;
+}
+
+void TBDataParser::OnCdataBlock(const char *text, Int_t len)
+{
+
+}

@@ -1,0 +1,1348 @@
+Title: Work Log
+
+This will be the work log i'll use to note everything i'll do in these 2 months of work on the L0 Trigger Board. Sometimes i'll be referring to image files that are located in the same folder as this log.
+
+First day of work is 05.26.2010
+
+Work conditions: the L0 trigger board is connected to a pc through the serial port. The pc is used to set the threshold of the comparator. In photo "L0 trigger board.jpg", "Interface side B.jpg", and "Interface + L0" we can see the L0 trigger board and the interface board connected and working. The engineer told me that the first 4 channels (number 4, 5, 6, 7) work correctly and that he has to do some tests on the other channels that right now don't work properly. Today i'm going to use channel 6.
+
+Goal: after setting the threshold to 1 Volt i want to generate a plot of the amplitude of the output signal in function of the threshold. Ideally this plot should be a step function but i'm expecting to see a curve decreasing not so sharply.
+
+Data needed: nominal input of the generator, input after the shaper (this will actually be used in the plot), output. Values taken are the mean given by the oscilloscope after some seconds. The error on the amplitude is estimated by looking at the last digit that changes in time and how much it changes. I estimated errors for V input shaper and V output to be approximately 0.3 mV except when specified otherwise. Every value is expressed in mV.
+
+As first thing i want to study the difference between the nominal generator amplitude value and the effective value after the shaper.
+
+V generator = 100
+V input shaper = max 106.6 p-p 116.7
+V output = max 17.2 p-p 39.4
+
+V generator = 200
+V input shaper = max 203.7 p-p 213.3
+V output = max 17.2 p-p 39.4
+
+V generator = 300
+V input shaper = max 305.0 p-p 317.2
+V output = max 18.6 p-p 38.7
+
+V generator = 400
+V input shaper = max 415.5 p-p 444.1
+V output = max 18.2 p-p 39.2
+
+One thing to note: increasing the amplitude also increases the "bounces" the signal will make after the pulse. Right after the pulse there is a negative peak (a little one) that has a influence on the p-p value of the input.
+
+V generator = 500
+V input shaper = max 462.8 p-p 565.5
+V output = max 18.0 p-p 39.6
+
+V generator = 600
+V input shaper = max 598.9 p-p 609.0
+V output = max 19.5 p-p 42.3
+
+V generator = 700
+V input shaper = max 681.8 p-p 695.5
+V output = max 18.7 p-p 42.3
+
+V generator = 800
+V input shaper = max 771.6 p-p 804.3
+V output = max 18.9 p-p 42.8
+
+V generator = 900
+V input shaper = max 834.6 p-p 886.4
+V output = max 19.8 p-p 44.8
+
+V generator = 1000
+V input shaper = max 843.1 p-p 892.2
+V output = max 19.3 p-p 42.3
+
+The signal coming from the generator is reduced in amplitude so i can't go over about 900 mV
+
+500 mV signal from the generator and now i'm changing the threshold
+V input shaper = max 510.5 p-p 547.0
+
+V threshold = 200
+V output = max 772.3 p-p 882.0
+
+V threshold = 300
+V output = max 762.8 p-p 899.4
+
+V threshold = 400
+V output = max 761.9 p-p 888.1
+
+V threshold = 480
+V output = max 713.4 ± 1 p-p 829.9 ± 1
+ 
+V threshold = 490
+V output = max 646.8 ± 1 p-p 762.3 ± 1
+
+V threshold = 500
+V output = max 503.3 ± 1 p-p 567.3 ± 1
+
+V threshold = 505
+V output = max 325.5 ± 50  p-p 376.5 ± 50 (the signal is changing too much to give a correct estimation of the error)
+
+V threshold = 510
+V output = max 53.9 p-p 76.8
+
+NEED TO TAKE MORE DATA AFTER 510
+
+V threshold = 600
+V output = max 19.4 p-p 39.8
+
+V threshold = 700
+V output = max 18.7 p-p 42.3
+
+
+05.27.2010
+
+I'm working on the same issues as yesterday, but today i'm going to test more input signals amplitudes, from 100 to 800. The engineer told me that the saturation of the input after the shaper over 900 mV is an issue he is working on.
+I'm going to take only V max (not p-p) from now on since it's only input data i need for analysis.
+With day++ i mean data taken the day after this.
+
+
+1 Gs/s (1.9 ± 0.1 ns width) | 100 mV
+
+V input shaper = 111.8
+
+V threshold = 0
+V output = 755.9
+
+V threshold = 50
+V output = 766.4
+
+V threshold = 80
+V output = 786.2
+
+V threshold = 90
+V output = 724.3 ± 2
+
+V threshold = 95
+V output = 469.7 
+
+V threshold = 100
+V output = 33.9 
+
+V threshold = 105
+V output = 19.5 
+
+V threshold = 150
+V output = 18.6
+
+
+1 Gs/s (1.9 ± 0.1 ns width)  | 200 mV
+
+V input shaper = 208.2
+
+V threshold = 100
+V output = 776.1
+
+V threshold = 150
+V output = 788.8
+
+V threshold = 180
+V output = 773.0 ± 1
+
+V threshold = 190
+V output = 691.1 ± 2
+
+V threshold = 195
+V output = 546.3 ± 8
+
+V threshold = 200
+V output = 178.5 ± 8
+
+V threshold = 205
+V output = 25.4 
+
+V threshold = 250
+V output = 19.5 
+
+1 Gs/s (1.9 ± 0.1 ns width) | 300 mV
+
+V input shaper = 308.2
+
+V threshold = 200 (day++)
+V output = 805.6
+
+V threshold = 220 (day++)
+V output = 817.5
+
+V threshold = 250
+V output = 775.3
+
+V threshold = 280
+V output = 745.3
+ 
+V threshold = 290
+V output = 689.4 ± 2
+
+V threshold = 295
+V output = 619.4 ± 8
+
+V threshold = 300
+V output = 422.4 ± 8
+
+V threshold = 305
+V output = 31.0 ± 1
+
+V threshold = 310
+V output = 26.5 
+
+V threshold = 350
+V output = 20.4 
+
+1 Gs/s (1.9 ± 0.1 ns width) | 400 mV
+
+V input shaper = 414.7 
+
+V threshold = 300 (day++)
+V output = 820.6
+
+V threshold = 320 (day++)
+V output = 828.8
+
+V threshold = 350
+V output = 779.6 
+
+V threshold = 380
+V output = 751.6
+ 
+V threshold = 390
+V output = 734.5 ± 2
+
+V threshold = 395
+V output = 654.3 ± 4
+
+V threshold = 400
+V output = 641.4 ± 8
+
+V threshold = 405
+V output = 526.5 ± 10
+
+V threshold = 410
+V output = 340.0 ± 10
+
+V threshold = 415
+V output = 116.1 ± 4
+
+V threshold = 420
+V output = 26.4 
+
+V threshold = 450
+V output = 19.0 
+
+1 Gs/s (1.9 ± 0.1 ns width) | 500 mV
+
+V input shaper = 510.9
+
+V threshold = 400 (day++)
+V output = 825.7
+
+V threshold = 420 (day++)
+V output = 820.9
+
+V threshold = 450
+V output = 776.5
+
+V threshold = 480
+V output = 729.4 ± 1
+ 
+V threshold = 490
+V output = 660.2 ± 3
+
+V threshold = 495
+V output = 605.9 ± 4
+
+V threshold = 500
+V output = 521.0 ± 6
+
+V threshold = 505
+V output = 333.2 ± 10
+
+V threshold = 510
+V output = 120.5 ± 4
+
+V threshold = 515
+V output = 48.9 ± 2
+
+Note : for 500 mV the output signal fluctuates more than usual.
+
+V threshold = 520
+V output = 23.4
+
+V threshold = 550
+V output = 21.2
+
+1 Gs/s (1.9 ± 0.1 ns width) | 600 mV
+
+V input shaper = 622.8
+
+V threshold = 500 (day++)
+V output = 825.0
+
+V threshold = 520 (day++)
+V output = 835.8
+
+V threshold = 550
+V output = 771.1
+
+V threshold = 580
+V output = 730.2
+ 
+V threshold = 590
+V output = 686.6 ± 2
+
+V threshold = 595
+V output = 642.8 ± 2
+
+V threshold = 600
+V output = 590.8 ± 3
+
+V threshold = 605
+V output = 472.8 ± 10
+
+V threshold = 610
+V output = 251.3 ± 8
+
+V threshold = 615
+V output = 72.8 ± 3
+
+V threshold = 620
+V output = 31.0 ± 1
+
+V threshold = 650
+V output = 17.8
+
+1 Gs/s (1.9 ± 0.1 ns width) | 700 mV
+
+V input shaper = 687.7
+
+V threshold = 550 (day++)
+V output = 825.1
+
+V threshold = 600 (day++)
+V output = 837.1
+
+V threshold = 620
+V output = 791.3
+
+V threshold = 650
+V output = 752.9
+
+V threshold = 680
+V output = 609.3 ± 4
+ 
+V threshold = 690
+V output = 437.4 ± 10
+
+V threshold = 695
+V output = 252.2 ± 10
+
+V threshold = 700
+V output = 111.0 ± 4
+
+V threshold = 705
+V output = 63.4 ± 8
+
+V threshold = 710
+V output = 27.9 ± 3
+
+V threshold = 715
+V output = 21.0
+
+V threshold = 720
+V output = 20.9
+
+1 Gs/s (1.9 ± 0.1 ns width) | 800 mV
+
+V input shaper = 764.9
+
+V threshold = 600 (day++)
+V output = 822.7
+
+V threshold = 650 (day++)
+V output = 837.4
+
+V threshold = 700
+V output = 781.9
+
+V threshold = 720
+V output = 775.6
+
+V threshold = 750
+V output = 708.6 ± 1
+
+V threshold = 760
+V output = 665.8 ± 2
+ 
+V threshold = 770
+V output = 574.5 ± 4
+
+V threshold = 780
+V output = 439.8 ± 10
+
+V threshold = 785
+V output = 266.6 ± 10
+
+V threshold = 790
+V output = 138.5 ± 8
+
+V threshold = 800
+V output = 23.0
+
+V threshold = 810
+V output = 21.1
+
+What i want now is a plot of the linearity: the amplitude value in function of the "critical" threshold. To find the critical threshold point i'm using a linear interpolation method to create a function using the data above, and then intersect it with the mean value between the max and the min output values. To find the intersect value i'm using the bisection method and i'm setting the error at 0.0001, just to be sure i'm way under 0.67, which is the error for the mean value.
+The max value is the mean of the first three points and the min value is the mean of the last 2 points.
+
+100 mV : V output mean = (769.5 ± 0.52 + 19.1 ± 0.42) / 2 = 394.3 ± 0.67
+200 mV : V output mean = (779.3 ± 0.52 + 22.6 ± 0.42) / 2 = 401.0 ± 0.67
+300 mV : V output mean = (779.2 ± 0.52 + 23.5 ± 0.42) / 2 = 401.4 ± 0.67
+400 mV : V output mean = (782.9 ± 0.52 + 22.7 ± 0.42) / 2 = 402.8 ± 0.67
+500 mV : V output mean = (778.9 ± 0.52 + 22.3 ± 0.42) / 2 = 400.6 ± 0.67
+600 mV : V output mean = (774.7 ± 0.52 + 24.4 ± 1.04) / 2 = 399.5 ± 1.16
+700 mV : V output mean = (789.8 ± 0.52 + 21.0 ± 0.42) / 2 = 405.4 ± 0.67
+800 mV : V output mean = (784.6 ± 0.52 + 22.1 ± 0.42) / 2 = 403.4 ± 0.67
+
+To get the error of the critical DT i must evaluate the TSpline at V output mean and V output mean ± sigma and then do the difference between those values.
+
+After computing the positive and negative errors on critical DT i noticed that there are almost the same (the difference is about 1e-05) so i'm going to take the positive error and use it as the X error.
+
+05.28.2010
+
+In the range between 300 and 800 mV i need to take more data before the critical threshold. Values signed with day++ are taken today.
+
+Today i should take the data with the pulse width at least doubled (> 3.6 ns) but i can't because i don't know how to set the width of the pulse on the generator (i should ask the engineer but he left :-( )).
+
+05.31.2010
+
+I'm going to analyze the output signal width in function of the input signal width above the threshold. I'm setting the threshold at 197 mV and then i'm changing the input amplitude to change the width; unfortunately this is the only method to change the width of the input pulse with this generator.
+197 mV DT corresponds to 208.2 mV in input. After setting the clock of the pulse to 1Gs/s i'm measuring the width
+
+Setting the pulse amplitude to 400 mV. If i look at the amplitude in input i can see a 291.1 ±0.3 mV signal. After the shaper the same signal measures 193.6 ±0.3 mV. There is something wrong. Values of amplitudes are in mV (as always).
+
+Nominal amplitude: 500 
+Input (measured on the board) amplitude: 386.2 ± 1 
+Input amplitude after the shaper above the threshold: 231.23 ± 0.3 
+Input width after the shaper above the threshold: 995.5 ± 1 ps. I can't estimate the error on this measure because i'm taking the value using markers and not with the help of the scope. The only thing i can do is use the same error of the output width that i measured with the scope as we can see in "output width 200 mV threshold 500 mV signal.bmp" file.
+Output width: 834.1 ± 1 ps
+
+Nominal amplitude: 700 
+Input (measured on the board) amplitude: 546.6 ± 2
+Input amplitude after the shaper: 319.6 ± 1
+Input width after the shaper above the threshold: 1.60 ± 0.01 ns 
+Output width: 1.56 ± 0.01 ns
+
+Nominal amplitude: 900
+Input amplitude after the shaper: 413.7 ± 0.5
+Input width after the shaper above the threshold: 1.97 ± 0.01 ns 
+Output width: 1.90 ± 0.01 ns
+
+Nominal amplitude: 1100
+Input amplitude after the shaper: 449.2 ± 0.3
+Input width after the shaper above the threshold: 2.15 ± 0.01 ns
+Output width: 2.08 ± 0.01 ns
+
+Nominal amplitude: 1300
+Input amplitude after the shaper:  479.6 ± 0.5
+Input width after the shaper above the threshold:  2.28 ± 0.01 ns
+Output width: 2.20 ± 0.01 ns
+
+Nominal amplitude: 1500
+Input amplitude after the shaper: 476.2 ± 0.5
+Input width after the shaper above the threshold:  2.37 ± 0.01 ns
+Output width: 2.31 ± 0.01 ns
+
+Nominal amplitude: 1700
+Input amplitude after the shaper: 488.1 ± 0.5
+Input width after the shaper above the threshold: 2.47 ± 0.01 ns 
+Output width: 2.42 ± 0.01 ns
+
+Nominal amplitude: 1900
+Input amplitude after the shaper: 489.4 ± 0.5
+Input width after the shaper above the threshold: 2.60 ± 0.01 ns
+Output width: 2.57 ± 0.01 ns
+
+06.01.2010
+
+It turns out the channel 6 amplifier on the test board is broken (the first day it was fine), so i have to do every test again on another channel. I'm choosing channel 5.
+
+As first thing i want to study the difference between the nominal generator amplitude value and the effective value after the shaper.
+Also i'm noting the input width to see if there are changes of the width, depending on the amplitude.
+
+V generator = 100 mV
+Input width = 2.13 ± 0.01 ns
+V input shaper = 100 ± 1 mV
+
+V generator = 200 mV
+Input width = 1.86 ± 0.01 ns
+V input shaper = 205.5 ± 0.3 mV
+
+V generator = 300 mV
+Input width = 1.82 ± 0.01 ns
+V input shaper =  320 ± 1 mV
+
+V generator = 400 mV
+Input width = 1.81 ± 0.01 ns
+V input shaper = 430 ± 1 mV
+
+V generator = 500 mV
+Input width = 1.79 ± 0.01 ns
+V input shaper = 537 ± 1 mV
+
+V generator = 600 mV
+Input width = 1.77 ± 0.01 ns
+V input shaper = 647.5 ± 0.3 mV
+
+V generator = 700 mV
+Input width = 1.79 ± 0.01 ns
+V input shaper = 703.5 ± 0.3 mV
+
+V generator = 800 mV
+Input width = 1.85 ± 0.01 ns
+V input shaper = 824 ± 1 mV
+
+V generator = 900 mV
+Input width = 1.95 ± 0.01 ns
+V input shaper = 874 ± 1 mV
+
+V generator = 1000 mV
+Input width = 2.05 ± 0.01 ns
+V input shaper = 899 ± 1 mV
+
+V generator = 1100 mV
+Input width = 2.15 ± 0.01 ns
+V input shaper = 920.6 ± 0.3 mV
+
+V generator = 1200 mV
+Input width = 2.23 ± 0.01 ns
+V input shaper = 939.7 ± 0.3 mV
+
+V generator = 1300 mV
+Input width = 2.31 ± 0.01 ns
+V input shaper = 935 ± 1 mV
+
+V generator = 1400 mV
+Input width = 2.41 ± 0.01 ns
+V input shaper = 933 ± 1 mV 
+
+V generator = 1500 mV
+Input width = 2.46 ± 0.01 ns
+V input shaper = 942 ± 1 mV
+
+V generator = 1600 mV
+Input width = 2.52 ± 0.01 ns
+V input shaper = 951 ± 1 mV
+
+V generator = 1700 mV
+Input width = 2.60 ± 0.01 ns
+V input shaper =  942.2 ± 0.3 mV
+
+V generator = 1800 mV
+Input width = 2.66 ± 0.01 ns
+V input shaper = 949.3 ± 0.3 mV
+
+V generator = 1900 mV
+Input width = 2.72 ± 0.01 ns
+V input shaper = 954.3 ± 0.3 mV
+
+V generator = 2000 mV
+Input width = 2.78 ± 0.01 ns
+V input shaper = 950.5 ± 0.5 mV
+
+Note: FWHM changes in function of the amplitude. In particular it starts increasing after about 600 mV.
+If i fit the FMHW graph with a constant between 100 and 800 mV i get the value of the average width for those signals.
+The result is: 1.852 ± 0.004 
+
+Saturation value = 9.46222e+02 +/-  1.38086e-01 mV
+
+
+------------------------------------------------
+
+1 Gs/s (2.25 ± 0.01 ns width) | 100 mV
+
+V input shaper = 102 ± 1
+
+V threshold = 0 mV
+V output = 770 ± 1 mV
+
+V threshold = 50 mV
+V output = 764.0 ± 0.5 mV
+
+V threshold = 80 mV
+V output = 789.8 ± 0.5 mV
+
+V threshold = 90 mV
+V output = 665 ± 2 mV
+
+V threshold = 95 mV
+V output = 283 ± 10 mV
+
+V threshold = 100 mV
+V output = 26 ± 1 mV
+
+V threshold = 110 mV
+V output = 14.5 ± 0.3 mV
+
+V threshold = 150 mV
+V output = 14.0 ± 0.3 mV
+
+
+1 Gs/s (1.90 ± 0.01 ns width)  | 200 mV
+
+V input shaper = 209 ± 1 mV
+
+V threshold = 100 mV
+V output = 770.4 ± 0.5 mV
+
+V threshold = 120 mV
+V output = 765.3 ± 0.5 mV
+
+V threshold = 150 mV
+V output = 784.8 ± 0.3 mV
+
+V threshold = 180 mV
+V output = 755.2 ± 0.3 mV
+
+V threshold = 190 mV
+V output = 599 ± 1 mV
+
+V threshold = 195 mV
+V output = 449 ± 10 mV
+
+V threshold = 200 mV
+V output = 104 ± 10 mV
+
+V threshold = 205 mV
+V output = 21 ± 2 mV
+
+V threshold = 220 mV
+V output = 12.8 ± 0.3 mV
+
+V threshold = 250 mV
+V output = 14.2 ± 0.3 mV
+
+1 Gs/s (1.82 ± 0.01 ns width) | 300 mV 
+
+V input shaper = 321 ± 1 mV
+
+V threshold = 200 mV
+V output = 764.0 ± 0.3 mV
+
+V threshold = 220 mV
+V output = 766.0 ± 0.3 mV
+
+V threshold = 250 mV
+V output = 787 ± 1 mV
+
+V threshold = 280 mV
+V output = 739.8 ± 0.5 mV
+ 
+V threshold = 290 mV
+V output = 662 ± 2 mV
+
+V threshold = 295 mV
+V output = 591 ± 2 mV
+
+V threshold = 300 mV
+V output = 450 ± 10 mV
+
+V threshold = 305 mV
+V output = 225 ± 10 mV
+
+V threshold = 310 mV
+V output = 31.1 ± 0.5 mV
+
+V threshold = 320 mV
+V output = 14.8 ± 0.3 mV
+
+V threshold = 350 mV
+V output = 18.1 ± 0.3 mV
+
+1 Gs/s (1.81 ± 0.01 ns width) | 400 mV
+
+V input shaper = 437 ± 1 mV 
+
+V threshold = 300 mV
+V output = 778.2 ± 0.5 mV
+
+V threshold = 320 mV
+V output = 784.2 ± 0.3 mV
+
+V threshold = 350 mV
+V output = 796 ± 1 mV
+
+V threshold = 380 mV
+V output = 745 ± 1 mV
+ 
+V threshold = 390 mV
+V output = 684 ± 1 mV
+
+V threshold = 395 mV
+V output = 673 ± 3 mV
+
+V threshold = 400 mV
+V output = 586 ± 3 mV
+
+V threshold = 405 mV
+V output = 520 ± 3 mV
+
+V threshold = 410 mV
+V output = 427 ± 10 mV
+
+V threshold = 415 mV
+V output = 277.4 ± 10 mV
+
+V threshold = 420 mV
+V output = 50 ± 2 mV
+
+V threshold = 450 mV
+V output = 16.7 ± 0.3 mV
+
+V threshold = 500 mV
+V output = 15.5 ± 0.5 mV
+
+1 Gs/s (1.78 ± 0.01 ns width) | 500 mV
+
+V input shaper = 546 ± 1 mV
+
+V threshold = 400 mV
+V output = 777.9 ± 0.5 mV
+
+V threshold = 420 mV
+V output = 801 ± 1 mV
+
+V threshold = 450 mV
+V output = 780.9 ± 0.5 mV
+
+V threshold = 480 mV
+V output = 710 ± 1 mV
+ 
+V threshold = 490 mV
+V output = 664 ± 2 mV
+
+V threshold = 495 mV
+V output = 627 ± 5 mV
+
+V threshold = 500 mV
+V output = 580 ± 3 mV
+
+V threshold = 505 mV
+V output = 527 ± 5 mV
+
+V threshold = 510 mV
+V output = 475 ± 7 mV
+
+V threshold = 515 mV
+V output = 373 ± 10 mV
+
+V threshold = 520 mV
+V output = 254 ± 10 mV
+
+V threshold = 525 mV
+V output = 65.8 ± 5 mV
+
+V threshold = 530 mV
+V output = 21.5 ± 0.3 mV
+
+V threshold = 550 mV
+V output = 18.0 ± 0.3 mV
+
+V threshold = 600 mV
+V output = 18.1 ± 0.3 mV
+
+1 Gs/s (1.77 ± 0.01 ns width) | 600 mV
+
+V input shaper = 649 ± 1 mV
+
+V threshold = 500 mV
+V output = 786.2 ± 0.3 mV
+
+V threshold = 520 mV
+V output = 770.8 ± 0.3 mV
+
+V threshold = 550 mV
+V output = 759.4 ± 0.3 mV
+
+V threshold = 580 mV
+V output = 676 ± 1 mV
+ 
+V threshold = 590 mV
+V output = 618 ± 2 mV
+
+V threshold = 595 mV
+V output = 591 ± 5 mV
+
+V threshold = 600 mV
+V output = 547 ± 3 mV
+
+V threshold = 605 mV
+V output = 513 ± 5 mV
+
+V threshold = 610 mV
+V output = 453 ± 10 mV
+
+V threshold = 615 mV
+V output = 330 ± 15 mV
+
+V threshold = 620 mV
+V output = 260 ± 10 mV
+
+V threshold = 625 mV
+V output = 97 ± 5 mV
+
+V threshold = 650 mV
+V output = 26 ± 1 mV
+
+V threshold = 670 mV
+V output = 21.1 ± 0.3 mV
+
+V threshold = 700 mV
+V output = 19.7 ± 0.3 mV
+
+1 Gs/s (1.77 ± 0.01 ns width) | 700 mV
+
+V input shaper = 743 ± 1 mV
+
+V threshold = 550 mV
+V output = 769.5 ± 0.5 mV
+
+V threshold = 600 mV
+V output = 775 ± 2 mV
+
+V threshold = 620 mV
+V output = 745 ± 1
+
+V threshold = 650 mV
+V output = 734 ± 2
+
+V threshold = 680 mV
+V output = 618 ± 1 mV
+ 
+V threshold = 690 mV
+V output = 550 ± 3 mV
+
+V threshold = 695 mV
+V output = 524 ± 2 mV
+
+V threshold = 700 mV
+V output = 478 ± 5 mV
+
+V threshold = 705 mV
+V output = 424 ± 3 mV
+
+V threshold = 710 mV
+V output = 328 ± 20 mV
+
+V threshold = 715 mV
+V output = 234 ± 10 mV
+
+V threshold = 720 mV
+V output = 78 ± 3 mV
+
+V threshold = 730 mV
+V output = 23.4 ± 0.3 mV
+
+V threshold = 750 mV
+V output = 23.3 ± 0.3 mV
+
+V threshold = 800 mV
+V output = 21.9 ± 0.3 mV
+
+1 Gs/s (1.87 ± 0.01 ns width) | 800 mV
+
+V input shaper = 832 ± 1 mV
+
+V threshold = 600 mV
+V output = 751.1 ± 0.3 mV
+
+V threshold = 650 mV
+V output = 773.2 ± 0.5 mV
+
+V threshold = 700 mV
+V output = 780.0 ± 0.3 mV
+
+V threshold = 720 mV
+V output = 742.3 ± 0.3 mV
+
+V threshold = 750 mV
+V output = 670.0 ± 0.3 mV
+
+V threshold = 760 mV
+V output = 637 ± 2 mV
+ 
+V threshold = 770 mV
+V output = 580 ± 2 mV
+
+V threshold = 780 mV
+V output = 512 ± 5 mV
+
+V threshold = 790 mV
+V output = 423 ± 10 mV
+
+V threshold = 795 mV
+V output = 348 ± 10 mV
+
+V threshold = 800 mV
+V output = 252 ± 10 mV
+
+V threshold = 810 mV
+V output = 104 ± 3 mV
+
+V threshold = 815 mV
+V output = 23.8 ± 0.5 mV
+
+V threshold = 820 mV
+V output = 29.8 ± 0.3 mV
+
+V threshold = 850 mV
+V output = 23.4 ± 0.3 mV
+
+V threshold = 900 mV
+V output = 23.2 ± 0.3 mV
+
+06.02.2010
+
+I'm taking the same data but for a different width (3.2 ns) and only for 3 points, to see if they are congruent with the previous linearity plot.
+
+0.3 Gs/s (3.02 ± 0.01 ns width) | 100 mV (this is the nominal amplitude from the generator)
+
+V input shaper = 224.8 ± 0.5 mV
+
+V threshold = 100 mV
+V output = 799.8 ± 0.3 mV
+
+V threshold = 120 mV
+V output = 810.0 ± 0.5 mV
+
+V threshold = 150 mV
+V output = 776 ± 1 mV
+
+V threshold = 180 mV
+V output = 765 ± 1 mV
+
+V threshold = 200 mV
+V output = 803 ± 1 mV
+
+V threshold = 210 mV
+V output = 771 ± 2 mV
+
+V threshold = 215 mV
+V output = 635.7 ± 3 mV
+
+V threshold = 220 mV
+V output = 102 ± 5 mV
+
+V threshold = 225 mV
+V output = 15 ± 1 mV
+
+V threshold = 250 mV
+V output = 17.1 ± 0.5 mV
+
+0.3 Gs/s (3.05 ± 0.01 ns width) | 200 mV
+
+V input shaper = 446 ± 1 mV 
+
+V threshold = 300 mV
+V output = 784.5 ± 0.3 mV
+
+V threshold = 320 mV
+V output = 789 ± 1 mV
+
+V threshold = 350 mV
+V output = 789 ± 1 mV
+
+V threshold = 410 mV
+V output = 782 ± 1 mV
+
+V threshold = 420 mV
+V output = 794 ± 5 mV
+
+V threshold = 430 mV
+V output = 691 ± 5 mV
+
+V threshold = 435 mV
+V output = 560 ± 3 mV
+
+V threshold = 440 mV
+V output = 128 ± 5 mV
+
+V threshold = 445 mV
+V output = 22.3 ± 0.3 mV
+
+V threshold = 450 mV
+V output = 17.3 ± 0.3 mV
+
+V threshold = 500 mV
+V output = 19.7 ± 0.3 mV
+
+0.3 Gs/s (3.06 ± 0.01 ns width) | 300 mV
+
+V input shaper = 659.2 ± 0.3 mV
+
+V threshold = 550 mV
+V output = 742 ± 1 mV
+
+V threshold = 580 mV
+V output = 761 ± 1 mV
+ 
+V threshold = 590 mV
+V output = 734.7 ± 0.5 mV
+
+V threshold = 600 mV
+V output = 753.8 ± 0.5 mV
+
+V threshold = 610 mV
+V output = 740.6 ± 0.3 mV
+
+V threshold = 630 mV
+V output = 773 ± 1 mV
+
+V threshold = 640 mV
+V output = 683.4 ± 0.5 mV
+
+V threshold = 645 mV
+V output = 515 ± 2 mV
+
+V threshold = 650 mV
+V output = 247 ± 5 mV
+
+V threshold = 655 mV
+V output = 17.8 ± 0.3 mV
+
+V threshold = 660 mV
+V output = 20.8 ± 0.3 mV
+
+V threshold = 680 mV
+V output = 19.5 ± 0.3 mV
+
+Now i want to study the output signal width in function of the input signal width. To do this i can set the threshold at a certain critical value and then changing the width of the input (with an amplitude above the threshold), measure the width of the output. However in order to do this i need the critical point calculated by the analysis tool (for the previous channel one of them was 197 mV) and then set the markers of the scope at this exact threshold level.
+So i'm not taking this measures today. Instead i'm using another method. I fix the input width and change the threshold level.
+Back to 1Gs/s pulse.
+
+Nominal amplitude: 800 
+Input amplitude after the shaper: 821.5 ± 0.3
+Input FMHW: 1.83 ± 0.01
+
+Threshold: 100 mV
+Input width after the shaper above the threshold: 2.86 ± 0.01 ns 
+Output FMHW: 2.85 ± 0.01 ns
+
+Threshold: 200 mV
+Input width after the shaper above the threshold: 2.34 ± 0.01 ns 
+Output FMHW: 2.45 ± 0.01 ns
+
+Threshold: 300 mV
+Input width after the shaper above the threshold: 2.17 ± 0.01 ns 
+Output FMHW: 2.45 ± 0.01 ns
+
+Threshold: 400 mV
+Input width after the shaper above the threshold: 1.89 ± 0.01 ns 
+Output FMHW: 1.77 +/- 0.01 ns
+
+Threshold: 500 mV
+Input width after the shaper above the threshold: 1.57 ± 0.01 ns 
+Output FMHW: 1.48 +/- 0.01 ns
+
+Threshold: 600 mV
+Input width after the shaper above the threshold: 1.27 ± 0.01 ns 
+Output FMHW: 1.16 ± 0.01 ns
+
+Threshold: 700 mV
+Input width after the shaper above the threshold: 0.943 ± 0.005 ns 
+Output FMHW: 0.842 ± 0.005 ns
+
+Threshold: 750 mV
+Input width after the shaper above the threshold: 0.754 ± 0.005 ns 
+Output FMHW: 0.672 ± 0.005 ns
+
+Threshold: 800 mV
+Input width after the shaper above the threshold: 0.483 ± 0.005 ns 
+Output FMHW: 0.45 ± 0.01 ns
+
+Threshold: 820 mV
+Input width after the shaper above the threshold: 0.250 ± 0.005 ns 
+Output FMHW: Output is to level 0 so it's impossible to determine a width
+
+THIS PART IS TO USE THE DAY I GET THE DT CRITICAL POINTS FOR THE CHANNEL 5
+
+----------------------------------------------------
+Threshold : 196 mV that corresponds to 209 mV in input. I'm using the last value as the offset for the marker in the scope.
+
+Nominal amplitude: 500 
+Input amplitude after the shaper:
+Input FMHW:  
+Input width after the shaper above the threshold:  ± 1 ps.
+Output FMHW: ± 1 ps
+
+Nominal amplitude: 700 
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold: ± 0.01 ns 
+Output FMHW: ± 0.01 ns
+
+Nominal amplitude: 900
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold: ± 0.01 ns 
+Output FMHW: ± 0.01 ns
+
+Nominal amplitude: 1100
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold: ± 0.01 ns
+Output FMHW: ± 0.01 ns
+
+Nominal amplitude: 1300
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold:  ± 0.01 ns
+Output FMHW: ± 0.01 ns
+
+Nominal amplitude: 1500
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold: ± 0.01 ns
+Output FMHW: ± 0.01 ns
+
+Nominal amplitude: 1700
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold: ± 0.01 ns 
+Output FMHW: ± 0.01 ns
+
+Nominal amplitude: 1900
+Input amplitude after the shaper:
+Input FMHW:
+Input width after the shaper above the threshold: ± 0.01 ns
+Output FMHW: ± 0.01 ns
+
+-----------------------------------------------------------
+
+06.03.2010
+
+The output of the sum, even when we have a single output, is different from the single output before the sum and precisely the amplitude of the signal should be 1/5 of the amplitude of the comparator output. So the sum output is the single output multiplied by a coefficient that i'll call alpha. I want to compute this alpha coefficient and to do so i'm going to send a pulse in everyone of the 4 working channels and measure both the single amplitude and the sum amplitude.
+The single to differential conversion attenuates the signal. Values are:
+
+V output single = 154 ± 2
+V output differential = 53.7 ± 0.3
+
+The conversion factor is V output single = (2.87 ± 0.04) * V output differential
+beta = 2.87 ± 0.04
+From now on i'll only measure the V output differential that has lesser noise because the output is directly connected to the scope that has an adapted impedance.
+
+Threshold = 200 mV
+
+Channel 5
+
+V input = 400 mV
+V comparator output = 752.3 ± 0.3 mV
+V adder output (diff) = 53.7 ± 0.3
+V adder output (single) = beta*(53.7 ± 0.3) = 154.0 ± 2.3
+Alpha5 = 154 ± 2.3 / 752.3 ± 0.3 = 0.205 ± 0.003
+
+V input = 800 mV
+V comparator output = 747.8 ± 0.3 mV
+V adder output (diff) = 54.0 ± 0.3
+V adder output (single) = beta*(54.0 ± 0.3) = 155.0 ± 2.3
+Alpha5 = 155 ± 2.3 / 747.8 ± 0.3 = 0.207 ± 0.003
+
+V input = 1200 mV
+V comparator output = 770.7 ± 0.3 mV
+V adder output (diff) = 54.2 ± 0.3
+V adder output (single) = beta*(54.2 ± 0.3) = 155.5  ± 2.3
+Alpha5 = 155.5 ± 2.3 / 770.7 ± 0.3 = 0.202 ± 0.003
+
+Combined Alpha5 computed by doing the fit of these alpha values with a constant function is: 0.205 ± 0.002
+
+Channel 4
+
+V input = 400 mV
+V comparator output = 799.2 ± 0.3 mV
+V adder output (diff) = 53.8 ± 0.3
+V adder output (single) = beta*(53.8 ± 0.3) = 154.4 ± 2.3
+Alpha4 = 154.4 ± 2.3 / 799.2 ± 0.3 = 0.193 ± 0.003
+
+V input = 800 mV
+V comparator output = 795.8 ± 0.3 mV
+V adder output (diff) = 55.9 ± 0.3
+V adder output (single) = beta*(55.9 ± 0.3) = 160.4 ± 2.3
+Alpha4 = 160.4 ± 2.3 / 795.8 ± 0.3 = 0.202 ± 0.003
+
+V input = 1200 mV
+V comparator output = 811.3 ± 0.3 mV
+V adder output (diff) =  55.4 ± 0.3
+V adder output (single) = beta*(55.4 ± 0.3) = 159.0 ± 2.3
+Alpha4 = 159 ± 2.3 / 811.3 ± 0.3 =  0.196 ± 0.003
+
+Combined Alpha4 computed by doing the fit of these alpha values with a constant function is: 0.197 +/- 0.002
+
+Channel 7
+
+V input = 400 mV
+V comparator output = 778.1 ± 0.3 mV
+V adder output (diff) = 53.4 ± 0.3
+V adder output (single) = beta*(53.4 ± 0.3) = 153.3 ± 2.3
+Alpha7 = 153.3 ± 2.3 / 778.1 ± 0.3 = 0.197 ± 0.003
+
+V input = 800 mV
+V comparator output = 767.5 ± 0.3 mV
+V adder output (diff) = 54.5 ± 0.3
+V adder output (single) = beta*(54.5 ± 0.3) = 156.4 ± 2.3
+Alpha7 = 156.4 ± 2.3 / 767.5 ± 0.3 = 0.204 ± 0.003
+
+V input = 1200 mV
+V comparator output = 791.2 ± 0.3 mV
+V adder output (diff) = 54.4 ± 0.3
+V adder output (single) = beta*(54.4 ± 0.3) = 156.1 ± 2.3
+Alpha7 = 156.1 ± 2.3 / 791.2 ± 0.3 = 0.197 ± 0.003
+
+Combined Alpha7 computed by doing the fit of these alpha values with a constant function is: 0.199 +/- 0.002
+
+06.09.2010
+
+In the past days i've been working on a new data structure to simplify my workflow. My intent is to make a xml file with all the data i take and use it directly in root. This way i don't have to create a giant wall of text in this log only for the data that i will need to copy anyway in the root code...
+
+However today i'm taking data for alpha coefficients of every channel.
+
+06.11.2010
+Channel 2 doesn't work so i'm measuring alpha coefficients for channels 0, 1 and 3.
+
+Channel 0
+
+V input = 400 mV
+V comparator output = 785 ± 0.3 mV
+V adder output (diff) = 54.0 ± 0.3
+V adder output (single) = beta*(54.0 ± 0.3) = 155.0 +/- 2.3
+Alpha7 = 155.0 +/- 2.3 / 785 ± 0.3 = 0.197 +/- 0.003
+
+V input = 800 mV
+V comparator output = 781.4 ± 0.3 mV
+V adder output (diff) = 54.4 ± 0.3
+V adder output (single) = beta*(54.4 ± 0.3) = 156.1 +/- 2.3
+Alpha7 = 156.1 +/- 2.3 / 781.4 ± 0.3 = 0.200 +/- 0.003
+
+V input = 1200 mV
+V comparator output = 782 ± 0.3 mV
+V adder output (diff) = 54.7 ± 0.3
+V adder output (single) = beta*(54.7 ± 0.3) = 157.0 +/- 2.3
+Alpha7 = 157.0 +/- 2.3 / 782 ± 0.3 = 0.201 +/- 0.003
+
+Combined Alpha0 computed by doing the fit of these alpha values with a constant function is: 0.199 +/- 0.002
+
+Channel 1
+
+V input = 400 mV
+V comparator output = 780 ± 0.3 mV
+V adder output (diff) = 54.0 ± 0.3
+V adder output (single) = beta*(54.0 ± 0.3) = 155.0 +/- 2.3
+Alpha7 = 155.0 +/- 2.3 / 780 ± 0.3 = 0.200 +/- 0.003
+
+V input = 800 mV
+V comparator output = 766.4 ± 0.3 mV
+V adder output (diff) = 54.8 ± 0.3
+V adder output (single) = beta*(54.8 ± 0.3) = 157.2 +/- 2.3
+Alpha7 = 157.2 +/- 2.3 / 766.4 ± 0.3 = 0.205 +/- 0.003
+
+V input = 1200 mV
+V comparator output = 797 ± 0.3 mV
+V adder output (diff) = 55.0 ± 0.3
+V adder output (single) = beta*(55.0 ± 0.3) = 157.9 +/- 2.3
+Alpha7 = 157.9 +/- 2.3 / 797 ± 0.3 = 0.198 +/- 0.003
+
+Combined Alpha1 computed by doing the fit of these alpha values with a constant function is: 0.201 +/- 0.002
+
+Channel 3
+
+Channel 3 has some issues. Look at "ch3 problem.bmp".
+
+Sum output rise and fall times
+Threshold: 200 mV
+V nominal input: 800 mV
+
+Channel 4
+Rise: 828 +/- 1 ps
+Fall: 766 +/- 1 ps
+
+Channel 5
+Rise: 773 +/- 1 ps
+Fall: 752 +/- 1 ps
+
+Channel 7
+Rise: 797 +/- 1 ps
+Fall: 753 +/- 1 ps
+
+Channel 0
+Rise: 782 +/- 1 ps
+Fall: 751 +/- 1 ps
+
+Channel 1
+Rise: 720 +/- 1 ps
+Fall: 750 +/- 1 ps
+
+Noise (pedestals standard deviation)
+
+These values are the mean given by the measurement standard deviation of the scope.
+Every measure is done with the test board directly connected to the scope.
+
+Probe standard deviation: 6.1 mV +/- 0.01
+Scope noise: 206.0 μV +/- 0.1
+
+Generator on
+Sum output noise without scope noise subtraction: 666.6 μV +/- 0.1
+Sum output noise with scope noise subtraction: 634.0 μV +/- 0.1
+
+Generator off
+Sum output noise without scope noise subtraction: 361.0 μV +/- 0.1
+Sum output noise with scope noise subtraction: 296.5 μV +/- 0.1
+
+06.21.2010
+
+Time delays
+
+There are 3 types of cables:
+Cable 1 : long
+Cable 2 : medium
+Cable 3 : short
+
+I'm using a multiplexer to input the same signal in many channels, so i can measure the sum output amplitude.
+Before this, i need to measure the delay introduced by the multiplexer with cables of the same length:
+
+Channel 0 - Channel 1 : 77.14 +/- 0.02 ps
+Channel 0 - Channel 2 : 192.01 +/- 0.02 ps
+Channel 0 - Channel 3 : 288.74 +/- 0.02 ps
+
+The sum output is (as always) the subtraction between the two differential outputs.
+
+Setup:
+Multiplexer ch 0 = Trigger channel 0
+Multiplexer ch 1 = Trigger channel 1
+Multiplexer ch 2 = Trigger channel 4
+Multiplexer ch 3 = Trigger for the scope
+
+DT 100 mV, input 500 mV
+
+Long cable
+Delay between input and output with only ch 0: 11.70 +/- 0.01 ns
+
+Medium cable
+Delay between input and output with only ch 0: 10.25 +/- 0.01 ns
+
+Short cable
+Delay between input and output with only ch 0: 8.42 +/- 0.01 ns
+
+Long - Medium = 1.45 ns
+Long - Short = 3.21 ns 
+
+Jitters
+
+Measure of the delay between ch 4 input and sum output: 11.94 +/- 0.028 ns (the error is the std dev)
+
+06.22.2010
+
+Today i can try to measure the delay introduced by cables directly memorizing the sum output waveforms. Also channel 4 comparator output must be retaken because of too few points. Take also the delay between the comparator output and the sum output.
+
+06.28.2010
+
+Today i measured the time jitters and analyzed the saturation of the adder.
+Time jitter between input and adder output for only one channel input is : 13.6 ps

@@ -1,0 +1,40 @@
+#include <Riostream.h>
+#include <TList.h>
+#include <TFolder.h>
+<<<<<<< .mine
+#include <vector>
+=======
+#include <TTree.h>
+>>>>>>> .r37
+
+#ifndef TBDATAPARSER_H_
+#define TBDATAPARSER_H_
+
+class TBDataParser {
+	TList *_foldersStack;
+	TNtuple *_values;
+<<<<<<< .mine
+	TList *_ntupleStack;
+=======
+	TTree *_dataSet;
+>>>>>>> .r37
+	
+public:	
+	TBDataParser();
+	
+	void	 Parse(const char *file);
+	void     OnStartDocument();
+	void     OnEndDocument();
+	void     OnStartElement(const char*, const TList*);
+	void     OnEndElement(const char*);
+	void     OnCharacters(const char*);
+	void     OnComment(const char*);
+	void     OnWarning(const char*);
+	void     OnError(const char*);
+	void     OnFatalError(const char*);
+	void     OnCdataBlock(const char*, Int_t);
+	
+	ClassDef(TBDataParser, 0)
+};
+
+#endif

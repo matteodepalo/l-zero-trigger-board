@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/53/trunk/WaveformFiles
+END
+adder output 2 channels.csv
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/53/trunk/WaveformFiles/adder%20output%202%20channels.csv
+END
+comparator_output_channel_0.csv
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45/trunk/WaveformFiles/comparator_output_channel_0.csv
+END
+adder output 3 channels.csv
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/53/trunk/WaveformFiles/adder%20output%203%20channels.csv
+END
+comparator_output_channel_1.csv
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45/trunk/WaveformFiles/comparator_output_channel_1.csv
+END
+adder output 4 channels.csv
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/53/trunk/WaveformFiles/adder%20output%204%20channels.csv
+END
+adder output 5 channels.csv
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/53/trunk/WaveformFiles/adder%20output%205%20channels.csv
+END
+comparator_output_channel_4.csv
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45/trunk/WaveformFiles/comparator_output_channel_4.csv
+END
+sum output ch 0 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/47/trunk/WaveformFiles/sum%20output%20ch%200%20input%20500%20mV%20DT%20100%20mV.csv
+END
+sum output ch 1 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/47/trunk/WaveformFiles/sum%20output%20ch%201%20input%20500%20mV%20DT%20100%20mV.csv
+END
+adder output 2 channels v2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/WaveformFiles/adder%20output%202%20channels%20v2.csv
+END
+single sum output ch 0 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/60/trunk/WaveformFiles/single%20sum%20output%20ch%200%20input%20500%20mV%20DT%20100%20mV.csv
+END
+adder output 3 channels v2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/WaveformFiles/adder%20output%203%20channels%20v2.csv
+END
+single sum output ch 1 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/60/trunk/WaveformFiles/single%20sum%20output%20ch%201%20input%20500%20mV%20DT%20100%20mV.csv
+END
+sum output ch 4 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/47/trunk/WaveformFiles/sum%20output%20ch%204%20input%20500%20mV%20DT%20100%20mV.csv
+END
+adder output 4 channels v2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/WaveformFiles/adder%20output%204%20channels%20v2.csv
+END
+adder output 5 channels v2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/60/trunk/WaveformFiles/adder%20output%205%20channels%20v2.csv
+END
+adder output 1 channel.csv
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/53/trunk/WaveformFiles/adder%20output%201%20channel.csv
+END
+single sum output ch 4 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/60/trunk/WaveformFiles/single%20sum%20output%20ch%204%20input%20500%20mV%20DT%20100%20mV.csv
+END
+single sum output ch 5 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/60/trunk/WaveformFiles/single%20sum%20output%20ch%205%20input%20500%20mV%20DT%20100%20mV.csv
+END
+single sum output ch 7 input 500 mV DT 100 mV.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/60/trunk/WaveformFiles/single%20sum%20output%20ch%207%20input%20500%20mV%20DT%20100%20mV.csv
+END
+sum_output_3_channels_(1-1-1).csv
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/45/trunk/WaveformFiles/sum_output_3_channels_(1-1-1).csv
+END
+adder output 1 channel v2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/60/trunk/WaveformFiles/adder%20output%201%20channel%20v2.csv
+END
+sum_output_3_channels_(3).csv
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/45/trunk/WaveformFiles/sum_output_3_channels_(3).csv
+END
